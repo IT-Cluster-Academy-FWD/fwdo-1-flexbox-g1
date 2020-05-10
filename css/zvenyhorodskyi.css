@@ -4,13 +4,12 @@
 
 .header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: 0 20px 0 10px;
 }
 
-li {
+.menu {
   list-style-type: none;
 }
 
@@ -18,7 +17,7 @@ a {
   text-decoration: none;
 }
 
-.logo img{
+.logo .logo-image {
   display: block;
   width: 100%;
   max-width: 120px;
@@ -26,31 +25,33 @@ a {
   height: auto;
 }
 
-.banner img {
+.banner .banner-image {
   width: 100%;
   margin-top: 5px;
 }
 
-.content {
-  display: block;
+.banner-content {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-p {
+.main-content {
   margin: 20px;
 }
 
-.h2 {
+.heading {
   text-align: center;
 }
 
-footer {
+.footer {
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .content {
+  .banner-content {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     text-align: center;
     font-size: 18px;
