@@ -1,0 +1,58 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+.navigation {
+  padding-right: 20px;
+  list-style: none;
+  font-size: 18px;
+}
+
+.logo {
+  height: auto;
+  max-width: 100%;
+  width: 200px;
+}
+
+.banner-image {
+  height: auto;
+  max-width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: auto;
+}
+ 
+.column {
+  text-align: center;
+  padding: 10px;
+}
+
+.footer p {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    flex-direction: row;
+  }
+}
