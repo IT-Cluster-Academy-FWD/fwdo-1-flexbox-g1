@@ -6,20 +6,19 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse;
   align-items: flex-start;
 }
 
 .navigation {
-  padding-right: 20px;
+  padding:0px 20px;
   list-style: none;
   font-size: 18px;
 }
 
 .logo {
   height: auto;
-  max-width: 100%;
-  width: 200px;
+  max-width: 200px;
+  width: 100%;
 }
 
 .banner-image {
@@ -29,20 +28,21 @@ body {
   margin: 0px;
 }
 
-h2 {
+.benefits-title {
   text-align: center;
   text-transform: uppercase;
 }
 
 .benefits {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: auto;
 }
  
-.column {
+.benefits-column {
   text-align: center;
   padding: 10px;
 }
