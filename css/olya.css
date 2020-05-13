@@ -10,7 +10,7 @@ body {
 }
 
 .navigation {
-  padding:0px 20px;
+  padding: 0px 20px;
   list-style: none;
   font-size: 18px;
 }
@@ -33,7 +33,7 @@ body {
   text-transform: uppercase;
 }
 
-.benefits {
+.benefits-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,7 +52,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .benefits {
+  .benefits-content {
     flex-direction: row;
   }
 }
