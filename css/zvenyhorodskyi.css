@@ -30,17 +30,18 @@ a {
   margin-top: 5px;
 }
 
-.banner-content {
+.benefits-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   text-align: center;
 }
 
-.main-content {
+.benefits-column {
   margin: 20px;
 }
 
-.heading {
+.benefits-heading {
   text-align: center;
 }
 
@@ -49,11 +50,8 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .banner-content {
-    display: flex;
+  .benefits-content {
     flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
     font-size: 18px;
   } 
 
