@@ -2,11 +2,11 @@
   margin: 0;
 }
 
-.banner  {
+.banner {
  width: 100%;
 }
 
-.banner img {
+.banner-img {
   max-width: 100%;
   height: auto;
 }
@@ -19,41 +19,42 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 85px;
 }
 
 .navigation {
   list-style: none;
   padding: 20px;
+  line-height: 1.5;
 }
 
 .logo-image {
   display: block;
   max-width: 100%;
   height: auto;
-  max-height: 85px;
+  max-height: 110px;
 }
 
-.benefits-block {
+.benefits-blocks {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin: 10px;
   font-size: 20px;
+  flex-direction: ;
 }
 
-.content {
-  display: flex;
-  justify-content: center;
+.benefits-title {
+  text-align: center;
 }
 
 .footer {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .benefits-block {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
   
