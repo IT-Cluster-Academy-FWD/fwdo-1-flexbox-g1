@@ -7,13 +7,19 @@
   <link rel="stylesheet" href="../css/ozarko.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+  <header class="header">
+    <img src="../img/logo.jpg" alt="logo" class="logo">
+    <nav class="navigation">
+      <ul class="menu">
+        <li>
+          <a href="#banner">Banner</a>
+        </li>
+        <li>
+          <a href="#benefits">Benefits</a>
+        </li>
+        <li>
+          <a href="#footer">Copyright</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -24,16 +30,40 @@
     </section>
 
     <section class="benefits" id="benefits">
-      <h2></h2>
+      <h2>Lorem ipsum</h2>
+      
       <div class="colum-header">
-        <div class="colum"></div>
-        <div class="colum"></div>
-        <div class="colum"></div>
+    
+        <div class="colum">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere omnis exercitationem ea reiciendis itaque eaque harum cupiditate, nisi assumenda debitis, repellat ipsam reprehenderit officiis expedita eos veritatis fuga laudantium iure?</p>
+        </div>
+
+        <div class="colum">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere omnis exercitationem ea reiciendis itaque eaque harum cupiditate, nisi assumenda debitis, repellat ipsam reprehenderit officiis expedita eos veritatis fuga laudantium iure?</p>
+        </div>
+
+        <div class="colum">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere omnis exercitationem ea reiciendis itaque eaque harum cupiditate, nisi assumenda debitis, repellat ipsam reprehenderit officiis expedita eos veritatis fuga laudantium iure?</p>
+        </div>
+
       </div>
     </section>
-
   </main>
 
-  <footer></footer>
+  <footer class="footer" id="footer">
+    <p>
+      © All right reserved
+    </p>
+  </footer>
+
+  <script>
+    const logo = document.getElementsByClassName('logo')[0]
+    const menu = document.getElementsByClassName('menu')[0]
+
+    logo.addEventListener('click', () => {
+      menu.classList.toggle('active')
+    });
+  </script>
+
 </body>
 </html>
