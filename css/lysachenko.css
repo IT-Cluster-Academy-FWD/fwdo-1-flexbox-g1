@@ -39,7 +39,6 @@ a {
   justify-content: space-around;
   margin: 10px;
   font-size: 20px;
-  flex-direction: ;
 }
 
 .benefits-title {
@@ -57,14 +56,3 @@ a {
     flex-direction: column;
   }
 }
-  
-
-
-
-
-
-
-
-
-
-
