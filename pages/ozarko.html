@@ -7,33 +7,56 @@
   <link rel="stylesheet" href="../css/ozarko.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+  <header class="header">
+    <img src="../img/logo.jpg" alt="logo" class="logo">
+    <nav class="navigation">
+      <ul class="menu">
+        <li class="menu-item">
+          <a class="menu-link" href="#banner">Banner</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#footer">Copyright</a>
+        </li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="main">
     <section id="banner" class="banner">
-      <img src="../img/banner.jpg" alt="movie image">
+      <img class="banner-image" src="../img/banner.jpg" alt="movie image">
     </section>
-
     <section class="benefits" id="benefits">
-      <h2></h2>
-      <div class="colum-header">
-        <div class="colum"></div>
-        <div class="colum"></div>
-        <div class="colum"></div>
+      <h2 class="banner-title">Lorem ipsum</h2>
+      <div class="benefits-colum-container">
+        <div class="benefits-colum">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere omnis exercitationem ea reiciendis itaque eaque harum cupiditate, nisi assumenda debitis, repellat ipsam reprehenderit officiis expedita eos veritatis fuga laudantium iure?</p>
+        </div>
+        <div class="benefits-colum">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere omnis exercitationem ea reiciendis itaque eaque harum cupiditate, nisi assumenda debitis, repellat ipsam reprehenderit officiis expedita eos veritatis fuga laudantium iure?</p>
+        </div>
+        <div class="benefits-colum">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere omnis exercitationem ea reiciendis itaque eaque harum cupiditate, nisi assumenda debitis, repellat ipsam reprehenderit officiis expedita eos veritatis fuga laudantium iure?</p>
+        </div>
       </div>
     </section>
-
   </main>
 
-  <footer></footer>
+  <footer class="footer" id="footer">
+    <p>
+      © All right reserved
+    </p>
+  </footer>
+
+  <script>
+    const logo = document.getElementsByClassName('logo')[0];
+    const menu = document.getElementsByClassName('menu')[0];
+    
+    logo.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
