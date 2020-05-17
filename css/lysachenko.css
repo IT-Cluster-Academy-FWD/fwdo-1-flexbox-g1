@@ -1,4 +1,58 @@
-.section {
-max-width: 100%;
-height: auto;
+* {
+  margin: 0;
+}
+
+.banner {
+ width: 100%;
+}
+
+.banner-img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  list-style: none;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.logo-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 110px;
+}
+
+.benefits-blocks {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.benefits-title {
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-block {
+    flex-direction: column;
+  }
 }
